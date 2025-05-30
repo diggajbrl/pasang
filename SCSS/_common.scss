@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+$PrimeColor : #3347FF;
+$PrePrimeColor : #EDEFF3;
+$SecondaryColor :#FF7422;
+$LinkColor : #2f6ed5;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin-bottom: 0;
+    color: #333d4c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    color: #181d25;
+}
+
+figure {
+    margin: 0px !important;
+}
+
+dl,
+ol,
+ul {
+    padding-left: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}

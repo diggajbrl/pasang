@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  box-sizing: border-box !important;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  margin-bottom: 0;
+  color: #333d4c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  color: #181d25;
+}
+
+figure {
+  margin: 0px !important;
+}
+
+dl,
+ol,
+ul {
+  padding-left: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 12px 0px;
+  border-bottom: 1px solid #dcdcdc;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav button {
+  border: none;
+  outline: none;
+  border-radius: 70px;
+  padding: 8px 20px;
+  background-color: #3347FF;
+  color: white;
+}
+
+.casual .container .row .sidebar {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  overflow-y: auto;
+  border-inline: 1px solid #dcdcdc;
+  background-color: #fff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.casual .container .row .sidebar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.casual .container .row .sidebar.fixed .heading {
+  background-color: white;
+}
+.casual .container .row .sidebar.fixed .content {
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .casual .container .row .sidebar {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+.casual .container .row .sidebar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+@media (max-width: 992px) {
+  .casual .container .row .sidebar .heading {
+    cursor: pointer;
+  }
+}
+@media (max-width: 992px) {
+  .casual .container .row .sidebar .content {
+    display: none;
+  }
+}
+.casual .container .row .sidebar p {
+  margin: 12px 0px;
+  text-align: center;
+}
+.casual .container .row .sidebar p i {
+  color: #2f6ed5;
+}
+.casual .container .row .sidebar nav .active {
+  background-color: #EDEFF3;
+}
+.casual .container .row .sidebar nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+.casual .container .row .sidebar nav a:last-child {
+  margin-bottom: 0px;
+}
+.casual .container .row .sidebar nav a:hover {
+  background-color: #EDEFF3;
+}
+.casual .container .row .sidebar #questionBank a {
+  background-color: #F6FAFE;
+}
+.casual .container .row .sidebar #questionBank a:last-child {
+  margin-bottom: 12px;
+}
+.casual .container .row .sidebar #questionBank a:hover {
+  color: #2f6ed5;
+}
+.casual .container .row .sidebar .ads figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.casual .container .row .docs {
+  border-right: 1px solid #dcdcdc;
+  padding: 30px;
+}
+.casual .container .row .docs h1,
+.casual .container .row .docs h2,
+.casual .container .row .docs h3,
+.casual .container .row .docs h4,
+.casual .container .row .docs h5,
+.casual .container .row .docs h6 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(229, 229, 229, 0.4352941176);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.casual .container .row .docs h1:first-child,
+.casual .container .row .docs h2:first-child,
+.casual .container .row .docs h3:first-child,
+.casual .container .row .docs h4:first-child,
+.casual .container .row .docs h5:first-child,
+.casual .container .row .docs h6:first-child {
+  margin-top: 0px;
+}
+.casual .container .row .docs ul {
+  padding: 20px;
+  border-radius: 6px;
+  border: 0.5px solid rgba(229, 229, 229, 0.4352941176);
+}
+.casual .container .row .docs ul li {
+  list-style: decimal !important;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+.casual .container .row .docs ul li:last-child {
+  margin-bottom: 0px;
+}
+.casual .container .row .docs ul li a {
+  color: #2f6ed5;
+}
+.casual .container .row .docs ul li a:hover {
+  text-decoration: underline !important;
+}
+.casual .container .row .docs ul li i {
+  color: #2f6ed5;
+}
+.casual .container .row .docs p {
+  margin-bottom: 8px;
+}
+.casual .container .row .docs p a {
+  color: #2f6ed5;
+}
+.casual .container .row .docs p a:hover {
+  text-decoration: underline !important;
+}
+.casual .container .row .docs p i {
+  color: #2f6ed5;
+}
+.casual .container .row .docs table {
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.casual .container .row .docs table th {
+  background-color: #F6FAFE;
+}
+.casual .container .row .docs table td,
+.casual .container .row .docs table th {
+  border: 1px solid rgba(229, 229, 229, 0.4352941176);
+  padding: 8px;
+  text-align: center;
+}
+
+footer {
+  background-color: #fff;
+  padding: 35px 0px;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+footer .container .row .newsletter p {
+  text-align: center;
+}
+footer .container .row .newsletter p span {
+  color: #2f6ed5;
+}
+footer .container .row .newsletter form input {
+  width: 100%;
+  margin: 12px 0px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+footer .container .row .newsletter form button {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  background-color: #3347FF;
+  color: #fff;
+}
+footer .container .row ul {
+  margin: 0px;
+}
+footer .container .row ul li {
+  margin-top: 10px;
+}
+footer .container .row ul li a {
+  color: #2f6ed5;
+}
+footer .container .row ul li a:hover {
+  text-decoration: underline !important;
+}
+
+.copyright {
+  padding: 12px 0px;
+}
+.copyright .container {
+  text-align: center;
+}
+.copyright .container p a {
+  color: #2f6ed5;
+}
+.copyright .container p a:hover {
+  text-decoration: underline !important;
+}/*# sourceMappingURL=style.css.map */
