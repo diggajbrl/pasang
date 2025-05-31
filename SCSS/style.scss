@@ -1,7 +1,9 @@
 @import "common";
+@import "variable";
 
 header {
     padding: 12px 0px;
+    background-color: #fff;
     border-bottom: 1px solid #dcdcdc;
 
     .container {
@@ -16,7 +18,7 @@ header {
                 border-radius: 70px;
                 padding: 8px 20px;
                 background-color: $PrimeColor;
-                color: #ffff;
+                color: #fff;
             }
         }
     }
@@ -28,35 +30,16 @@ header {
             .sidebar {
                 position: sticky;
                 top: 0px;
-                height: 100vh;
-                overflow-y: auto;
+
                 border-inline: 1px solid #dcdcdc;
                 background-color: #fff;
+                padding-bottom: 12px;
+
+                overflow-y: auto;
+                max-height: 100vh;
+
                 -ms-overflow-style: none;
                 scrollbar-width: none;
-
-                &.fixed {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-
-                    .heading {
-                        background-color: white;
-
-                    }
-                    .content{
-                        height: 100vh;
-                        overflow-y: auto;
-                        padding-bottom: 20px;
-                    }
-
-                }
-
-                @media (max-width:992px) {
-                    height: fit-content;
-
-                }
 
                 &::-webkit-scrollbar {
                     display: none;
@@ -65,45 +48,25 @@ header {
                     background: transparent;
                 }
 
-                .heading {
-                    @media (max-width:992px) {
-                        cursor: pointer;
-                    }
-
-                }
-
-                .content {
-
-                    @media (max-width:992px) {
-                        display: none;
-
-                    }
-                }
-
                 p {
-                    margin: 12px 0px;
                     text-align: center;
+                    margin: 12px 0px;
 
                     i {
                         color: $LinkColor;
                     }
                 }
 
-
                 nav {
-                    .active {
-                        background-color: $PrePrimeColor;
-                    }
-
                     a {
+                        padding: 8px 12px;
+                        border-radius: 6px;
+
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        border-radius: 6px;
-                        padding: 8px 12px;
 
                         margin-bottom: 8px;
-                        transition: all 0.3s;
 
                         &:last-child {
                             margin-bottom: 0px;
@@ -113,32 +76,34 @@ header {
                             background-color: $PrePrimeColor;
                         }
                     }
+
+                    .active {
+                        background-color: $PrePrimeColor;
+                    }
                 }
 
-                #questionBank {
-                    a {
-                        background-color: #F6FAFE;
-
-                        &:last-child {
-                            margin-bottom: 12px;
-                        }
-
-                        &:hover {
-                            color: $LinkColor;
+                .questionBank {
+                    nav {
+                        a {
+                            background-color: #F6FAFE;
                         }
                     }
                 }
 
                 .ads {
-                    figure {
-                        img {
-                            width: 100%;
-                            object-fit: cover;
-                            aspect-ratio: 16 / 9;
-                            border-radius: 6px;
-                            margin-bottom: 12px;
-                            cursor: pointer;
+                    a {
+
+                        figure {
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                                border-radius: 6px;
+                                aspect-ratio: 16 / 9;
+                                margin-bottom: 8px;
+                            }
+
                         }
+
                     }
                 }
             }
@@ -171,7 +136,7 @@ header {
                     border: 0.5px solid #e5e5e56f;
 
                     li {
-                        list-style: decimal !important;
+                        list-style: disc !important;
                         margin-bottom: 8px;
                         margin-left: 15px;
 
@@ -272,10 +237,10 @@ footer {
             }
 
             ul {
-                margin: 0px;
+                margin: 0;
 
                 li {
-                    margin-top: 10px;
+                    margin-top: 12px;
 
                     a {
                         color: $LinkColor;
@@ -284,7 +249,6 @@ footer {
                             text-decoration: underline !important;
                         }
                     }
-
                 }
             }
         }
@@ -293,6 +257,7 @@ footer {
 
 .copyright {
     padding: 12px 0px;
+    background-color: #fff;
 
     .container {
         text-align: center;

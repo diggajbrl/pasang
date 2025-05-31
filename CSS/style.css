@@ -44,6 +44,7 @@ html {
 
 header {
   padding: 12px 0px;
+  background-color: #fff;
   border-bottom: 1px solid #dcdcdc;
 }
 header .container {
@@ -57,38 +58,19 @@ header .container nav button {
   border-radius: 70px;
   padding: 8px 20px;
   background-color: #3347FF;
-  color: white;
+  color: #fff;
 }
 
 .casual .container .row .sidebar {
   position: sticky;
   top: 0px;
-  height: 100vh;
-  overflow-y: auto;
   border-inline: 1px solid #dcdcdc;
   background-color: #fff;
+  padding-bottom: 12px;
+  overflow-y: scroll;
+  max-height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-.casual .container .row .sidebar.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.casual .container .row .sidebar.fixed .heading {
-  background-color: white;
-}
-.casual .container .row .sidebar.fixed .content {
-  height: 100vh;
-  overflow-y: auto;
-  padding-bottom: 20px;
-}
-@media (max-width: 992px) {
-  .casual .container .row .sidebar {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
 }
 .casual .container .row .sidebar::-webkit-scrollbar {
   display: none;
@@ -96,34 +78,20 @@ header .container nav button {
   height: 0;
   background: transparent;
 }
-@media (max-width: 992px) {
-  .casual .container .row .sidebar .heading {
-    cursor: pointer;
-  }
-}
-@media (max-width: 992px) {
-  .casual .container .row .sidebar .content {
-    display: none;
-  }
-}
 .casual .container .row .sidebar p {
-  margin: 12px 0px;
   text-align: center;
+  margin: 12px 0px;
 }
 .casual .container .row .sidebar p i {
   color: #2f6ed5;
 }
-.casual .container .row .sidebar nav .active {
-  background-color: #EDEFF3;
-}
 .casual .container .row .sidebar nav a {
+  padding: 8px 12px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 6px;
-  padding: 8px 12px;
   margin-bottom: 8px;
-  transition: all 0.3s;
 }
 .casual .container .row .sidebar nav a:last-child {
   margin-bottom: 0px;
@@ -131,23 +99,19 @@ header .container nav button {
 .casual .container .row .sidebar nav a:hover {
   background-color: #EDEFF3;
 }
-.casual .container .row .sidebar #questionBank a {
+.casual .container .row .sidebar nav .active {
+  background-color: #EDEFF3;
+}
+.casual .container .row .sidebar .questionBank nav a {
   background-color: #F6FAFE;
 }
-.casual .container .row .sidebar #questionBank a:last-child {
-  margin-bottom: 12px;
-}
-.casual .container .row .sidebar #questionBank a:hover {
-  color: #2f6ed5;
-}
-.casual .container .row .sidebar .ads figure img {
+.casual .container .row .sidebar .ads a figure img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 16/9;
   border-radius: 6px;
-  margin-bottom: 12px;
-  cursor: pointer;
+  aspect-ratio: 16/9;
+  margin-bottom: 8px;
 }
 .casual .container .row .docs {
   border-right: 1px solid #dcdcdc;
@@ -179,7 +143,7 @@ header .container nav button {
   border: 0.5px solid rgba(229, 229, 229, 0.4352941176);
 }
 .casual .container .row .docs ul li {
-  list-style: decimal !important;
+  list-style: disc !important;
   margin-bottom: 8px;
   margin-left: 15px;
 }
@@ -251,10 +215,10 @@ footer .container .row .newsletter form button {
   color: #fff;
 }
 footer .container .row ul {
-  margin: 0px;
+  margin: 0;
 }
 footer .container .row ul li {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 footer .container .row ul li a {
   color: #2f6ed5;
@@ -265,6 +229,7 @@ footer .container .row ul li a:hover {
 
 .copyright {
   padding: 12px 0px;
+  background-color: #fff;
 }
 .copyright .container {
   text-align: center;
