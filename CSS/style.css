@@ -42,6 +42,16 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 992px) {
+  footer .container h1,
+  footer .container h2,
+  footer .container h3,
+  footer .container h4,
+  footer .container h5,
+  footer .container h6 {
+    margin-top: 12px;
+  }
+}
 header {
   padding: 12px 0px;
   background-color: #fff;
@@ -52,12 +62,15 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+header .container .logo h3 {
+  font-family: "Bungee", sans-serif;
+}
 header .container nav button {
   border: none;
   outline: none;
-  border-radius: 70px;
+  border-radius: 6px;
   padding: 8px 20px;
-  background-color: #3347FF;
+  background-color: #6741d9;
   color: #fff;
 }
 
@@ -67,7 +80,7 @@ header .container nav button {
   border-inline: 1px solid #dcdcdc;
   background-color: #fff;
   padding-bottom: 12px;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -88,6 +101,7 @@ header .container nav button {
 .casual .container .row .sidebar nav a {
   padding: 8px 12px;
   border-radius: 6px;
+  transition: all 0.3s;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,13 +111,13 @@ header .container nav button {
   margin-bottom: 0px;
 }
 .casual .container .row .sidebar nav a:hover {
-  background-color: #EDEFF3;
+  background-color: #E7E4FF;
 }
 .casual .container .row .sidebar nav .active {
-  background-color: #EDEFF3;
+  background-color: #E7E4FF;
 }
 .casual .container .row .sidebar .questionBank nav a {
-  background-color: #F6FAFE;
+  background-color: #E7E4FF;
 }
 .casual .container .row .sidebar .ads a figure img {
   width: 100%;
@@ -140,7 +154,7 @@ header .container nav button {
 .casual .container .row .docs ul {
   padding: 20px;
   border-radius: 6px;
-  border: 0.5px solid rgba(229, 229, 229, 0.4352941176);
+  background-color: #F6F6F9;
 }
 .casual .container .row .docs ul li {
   list-style: disc !important;
@@ -211,7 +225,7 @@ footer .container .row .newsletter form button {
   border: none;
   border-radius: 6px;
   padding: 8px 20px;
-  background-color: #3347FF;
+  background-color: #6741d9;
   color: #fff;
 }
 footer .container .row ul {
