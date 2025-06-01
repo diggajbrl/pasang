@@ -51,6 +51,21 @@ html {
   footer .container h6 {
     margin-top: 12px;
   }
+  .casual .respo {
+    display: block !important;
+  }
+  .casual .container .row .sidebar {
+    display: none;
+  }
+  .casual .container .row .sidebar .menu {
+    display: none;
+  }
+  .casual .container .row .sidebar .menuContent {
+    padding-top: 12px;
+  }
+  .casual .container .docs {
+    border-right: none !important;
+  }
 }
 header {
   padding: 12px 0px;
@@ -74,6 +89,20 @@ header .container nav button {
   color: #fff;
 }
 
+.casual .respo {
+  display: none;
+  cursor: pointer;
+  padding: 12px 0px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.casual .respo .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.casual .respo .container i {
+  color: #2f6ed5;
+}
 .casual .container .row .sidebar {
   position: sticky;
   top: 0px;
@@ -111,9 +140,12 @@ header .container nav button {
   margin-bottom: 0px;
 }
 .casual .container .row .sidebar nav a:hover {
-  background-color: #E7E4FF;
+  background-color: #F6F6F9;
 }
 .casual .container .row .sidebar nav .active {
+  background-color: #E7E4FF;
+}
+.casual .container .row .sidebar nav .active:hover {
   background-color: #E7E4FF;
 }
 .casual .container .row .sidebar .questionBank nav a {
@@ -137,7 +169,7 @@ header .container nav button {
 .casual .container .row .docs h4,
 .casual .container .row .docs h5,
 .casual .container .row .docs h6 {
-  font-size: 24px;
+  font-size: 28px;
   padding-bottom: 10px;
   border-bottom: 0.5px solid rgba(229, 229, 229, 0.4352941176);
   margin-top: 30px;

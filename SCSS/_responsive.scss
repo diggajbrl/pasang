@@ -12,4 +12,32 @@
             }
         }
     }
+
+    .casual {
+        .respo {
+            display: block !important;
+        }
+
+        .container {
+            .row {
+                .sidebar {
+                    display: none;
+
+                    .menu {
+                        display: none;
+                    }
+
+                    .menuContent {
+                        padding-top: 12px;
+                    }
+
+                }
+            }
+
+            .docs {
+                border-right: none !important;
+
+            }
+        }
+    }
 }

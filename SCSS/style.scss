@@ -31,6 +31,23 @@ header {
 }
 
 .casual {
+    .respo {
+        display: none;
+        cursor: pointer;
+        padding: 12px 0px;
+        border-bottom: 1px solid #dcdcdc;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            i {
+                color: $LinkColor;
+            }
+        }
+    }
+
     .container {
         .row {
             .sidebar {
@@ -80,12 +97,16 @@ header {
                         }
 
                         &:hover {
-                            background-color: #E7E4FF;
+                            background-color: $PrePrimeColor;
                         }
                     }
 
                     .active {
                         background-color: #E7E4FF;
+
+                        &:hover {
+                            background-color: #E7E4FF;
+                        }
                     }
                 }
 
@@ -125,7 +146,7 @@ header {
                 h4,
                 h5,
                 h6 {
-                    font-size: 24px;
+                    font-size: 28px;
                     padding-bottom: 10px;
                     border-bottom: 0.5px solid #e5e5e56f;
 
